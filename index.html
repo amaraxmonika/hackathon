@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="options">
+    <input id="is-full-screen" type="checkbox" />
+    <label for="is-full-screen">Receive only</label>
+
+    <input id="is-audible" type="checkbox" />
+    <label for="is-audible">Audible range</label>
+
+    <input id="is-visualizer" type="checkbox" />
+    <label for="is-visualizer">Visualizer enabled</label>
+  </div>
+  <div>
+      <input type="button" id="myButton" text="download" value="down"></input>
+  </div>
+  <div>
+      <input type="button" id="myButton2" text="download" value="facebook"></input>
+  </div>
+
+  <!-- Received emoticon goes here -->
+  <!--<img id="received-emoticon" class="placeholder" src="img/placeholder.gif" />-->
+  <img id="received-emoticon" class="placeholder" src="" />
+
+  <div id="select-emoticon">
+    <!-- Emoticon picker -->
+  </div>
+
+  <div id="mobile-warning">
+    Note: receiving may not work on your mobile browser due to
+    hardware/firmware limitations of the microphone.
+  </div>
+
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/delivery.js"></script>
+<script src="build/all.js"></script>
+<script>
+/*
+    var socket = io('http://beardownforwhat.com');
+    socket.on('news', function (data) {
+        console.log(data );
+        socket.emit('my other event', { my : "data" });
+    });
+*/
+</script>
+</body>
